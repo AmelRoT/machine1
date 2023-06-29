@@ -56,4 +56,7 @@ int main(){
 
 
 
-git config --global user.email "<amelrambabovic@gmail.com>"
+// git config --global user.email "<amelrambabovic@gmail.com>"
+
+
+// space -> password for keys
