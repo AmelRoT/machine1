@@ -14,8 +14,8 @@ double sigmoid(double x){
  double y [][3] = {
     {0,0,0}, 
     {1,1,1}, 
-    {0,1,0},
-    {1,0,0}, 
+    {0,1,1},
+    {1,0,1}, 
     
     };
 
@@ -27,9 +27,9 @@ double d = 0;
 double k1 = 0.5; 
 double k2 = 0.5; 
 double sigma = 0; 
-double C = 0.6; 
+double C = 0.7; 
 double h1 = 10^-5; 
-double b = 10;
+double b = 100;
 
 
 
@@ -42,7 +42,7 @@ double cost(double k1, double k2,double b){
         d = sigmoid((k1*y[i][0]+k2*y[i][1])+b)-y[i][2];
       //  printf("d : %f \n", d); 
         sigma += d*d;  // distance between them 
-        printf("sigma : %f \n",d) ; 
+      //  printf("sigma : %f \n",d) ; 
     }
 
     return sigma; 
@@ -64,6 +64,7 @@ double dot2(double k1, double k2,double b){
 
 }
 
+
 double dot3(double k1, double k2,double b){
 
    double  h = 10^-5; 
@@ -79,8 +80,8 @@ int main(){
     //
 
     k1 = 25; 
-    k2 = 25; 
-    b = -3.95;
+    k2 = 10; 
+    b = -1;
 
 #if 0 
     for (int j1 = -10; j1<10; j1++){
@@ -92,7 +93,7 @@ int main(){
 #endif 
 
 
-    for (int j = 0; j<50000; j++){
+    for (int j = 0; j<10000; j++){
 
         double a = k1; 
         k1 = k1 - C*dot1(k1,k2,b); 
@@ -102,7 +103,7 @@ int main(){
         printf("b : %f \n" ,b); 
         printf("k1 : %f \n" , k1); 
         printf("k2 : %f \n" , k2); 
-
+ 
     }
 
     for (int j2 = 0; j2 < 4; j2++){
