@@ -37,7 +37,6 @@ double dot(double k){
 
 }
 
-
 int main(){
 
     
@@ -56,7 +55,12 @@ int main(){
 
 
 
+
 // git config --global user.email "<amelrambabovic@gmail.com>"
 
 
 // space -> password for keys
+// git add .
+// git commit -m "commit"
+// git remote add origin git@github.com:AmelRoT/machine1.git
+// git push -u origin main 
