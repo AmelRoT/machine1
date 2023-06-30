@@ -1,0 +1,3 @@
+nasm -f elf64 p1.asm      ; Assemble the code into object file
+ld -o p1 p1.o            ; Link the object file to create an executable
+./p1                     ; Run the executable

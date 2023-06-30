@@ -12,6 +12,10 @@ int main(void)
     int count = 5; 
 
 
+    // int array1[][]; 
+
+
+
 
     number = (int *) malloc(count*sizeof(int)); 
 
@@ -22,7 +26,9 @@ int main(void)
     for(int j = 0; j< count; j++){
         printf(":  %d \n ", number[j]); 
     }
+    
 
+    printf("%zu \n", sizeof(int)); 
 
 
 
