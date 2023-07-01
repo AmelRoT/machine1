@@ -10,7 +10,7 @@ int main(){
 
 
     #if 0 
-    
+    int a = 10; 
 
     #endif 
 
