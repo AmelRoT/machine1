@@ -8,3 +8,6 @@ ld -o p1 p1.o            ; Link the object file to create an executable
 
 cd ~/.ssh
 $ ssh-keygen -o -t rsa -C "email@gmail.com"
+
+
+////
